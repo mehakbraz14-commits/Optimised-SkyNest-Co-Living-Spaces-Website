@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyNest Co-Living Spaces | Resident Guide</title>
+<meta name="description" content="SkyNest Co-Living Spaces, a fictional co-living accommodation provider in Singapore.">
+<style>
+
+*{box-sizing:border-box}
+:root{--pine:#24483f;--sage:#dce7dc;--cream:#faf7ef;--clay:#bd7056;--ink:#293b35;--muted:#65736b;--line:#e3e6dc}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 'Trebuchet MS',Arial,sans-serif}
+.container{width:min(1120px,90%);margin:auto}
+.skip-link{position:absolute;top:-100px;left:12px;padding:10px;background:white;color:var(--pine);z-index:9}
+.skip-link:focus{top:12px}
+header,footer{background:var(--pine);color:white;text-align:center;padding:22px 0}
+.site-name{font:bold 28px Georgia,serif;margin:0}
+.tagline{margin:3px 0 0;color:#e1e9df}
+nav{background:#e9eee5;border-bottom:1px solid #d7dfd4}
+.nav-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;list-style:none;margin:0;padding:10px 0}
+.nav-links a{display:block;padding:9px 15px;border-radius:24px;color:var(--pine);font-weight:bold;text-decoration:none}
+.nav-links a:hover,.nav-links a[aria-current=page]{background:var(--pine);color:white}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--clay);outline-offset:4px}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;color:var(--pine);line-height:1.2}
+h1{font-size:clamp(36px,5vw,52px);margin:0 0 16px}
+h2{font-size:30px;margin:0 0 13px}
+h3{font-size:22px;margin:0 0 10px}
+.eyebrow{color:var(--clay);font-size:13px;font-weight:bold;letter-spacing:1.4px;text-transform:uppercase;margin:0 0 9px}
+.intro,.hero{background:var(--sage);padding:52px 0}
+.section{padding:52px 0}
+.white{background:white}
+.button{display:inline-block;padding:11px 22px;margin-top:12px;border-radius:25px;background:var(--clay);color:white;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+.button:hover{background:#9f5943}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border:1px solid var(--line);border-radius:14px;padding:23px;box-shadow:0 7px 20px #293b3508}
+.heading-icon{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;margin-right:8px;border-radius:50%;background:var(--sage);color:var(--pine);font-family:Arial,sans-serif;font-size:17px;vertical-align:2px}
+.search-area{background:#f0eee4;border-bottom:1px solid var(--line);padding:13px 0}
+.search-form{display:flex;align-items:center;gap:10px;max-width:720px;margin:auto}
+.search-form label{font-weight:bold;color:var(--pine);white-space:nowrap}
+.search-form input{min-width:0;flex:1;padding:10px 13px;border:1px solid #b9c6bc;border-radius:22px;background:#fff;color:var(--ink);font:inherit}
+.search-form button{padding:10px 18px;border:0;border-radius:22px;background:var(--pine);color:#fff;font:inherit;font-weight:bold;cursor:pointer}
+.search-form button:hover{background:#18372f}
+.search-status{max-width:720px;margin:5px auto 0;color:var(--pine);font-size:13px}
+.back-top-wrap{text-align:center;padding:10px 0 35px}
+.back-top{display:inline-flex;align-items:center;gap:8px;padding:9px 17px;border:1px solid #b9c6bc;border-radius:22px;background:#e9eee5;color:var(--pine);font:inherit;font-weight:bold;text-decoration:none}
+.back-top:hover{background:var(--sage)}
+footer{padding:24px 0}
+footer p{margin:4px 0}
+.footer-note{font-size:13px;color:#dce7dc}
+@media(max-width:740px){
+ .cards,.two-col,.hero-grid,.package-grid,.contact-layout,.guide-grid{grid-template-columns:1fr!important}
+ .section,.intro,.hero{padding:36px 0}
+ .search-form{flex-wrap:wrap}
+ .search-form label{width:100%}
+ .search-form input{flex-basis:65%}
+}
+
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header><div class="container"><p class="site-name">SkyNest Co-Living Spaces</p><p class="tagline">Space to live, work and connect in Singapore</p></div></header>
+<nav aria-label="Main navigation"><div class="container"><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="guide.html" aria-current="page">Resident Guide</a></li><li><a href="contact.html">Contact Us</a></li></ul></div></nav>
+
+<section class="search-area" aria-label="Website search">
+ <div class="container">
+  <form class="search-form" id="site-search">
+   <label for="search-input">Search this website</label>
+   <input id="search-input" type="search" placeholder="Try ‘facilities’ or ‘accommodation packages’" autocomplete="off" aria-describedby="search-status">
+   <button type="submit">Search</button>
+  </form>
+  <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+ </div>
+</section>
+
+<main id="main-content">
+
+<section class="intro"><div class="container"><p class="eyebrow">Helpful information for residents</p><h1>Resident Guide</h1><p>Find out more about the accommodation packages, get ready for move-in day and learn how to use the shared spaces and facilities at SkyNest Co-Living Spaces.</p></div></section>
+<div class="container guide-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:45px 0">
+<section class="card" style="grid-column:1/-1;border-top:5px solid var(--clay)"><h2 id="packages-heading"><span class="heading-icon" aria-hidden="true">▤</span>Choosing your accommodation package</h2><p>SkyNest offers different accommodation packages depending on your preferred room arrangement, length of stay and individual requirements.</p><ul>
+<li><strong>Premium Stay:</strong> A <strong>private studio apartment</strong> with weekly cleaning, <strong>utilities and high-speed internet included</strong>, access to all facilities and a monthly community events pass.</li>
+<li><strong>Standard Stay:</strong> A <strong>private bedroom in a shared apartment</strong>, with fortnightly cleaning, utilities included and access to co-working spaces, a shared kitchen and lounge.</li>
+<li><strong>Short-Term Stay:</strong> Flexible accommodation for <strong>1–4 weeks</strong>, including a furnished room and utilities, with limited access to shared facilities.</li>
+<li><strong>Custom Packages:</strong> Available for corporate bookings, long-term stays and residents with accessibility needs. Contact SkyNest to discuss the arrangements you require.</li>
+</ul></section>
+<section class="card"><h2 id="move-in-heading"><span class="heading-icon" aria-hidden="true">✓</span>Move-in checklist</h2><ul><li>Confirm your <strong>accommodation package</strong>, arrival date and check-in arrangements.</li><li>Keep your booking confirmation and <strong>photo ID</strong> handy for check-in.</li><li>Check what is included in your chosen package before you pack.</li><li>Pack your toiletries, chargers, personal belongings and any items you may need for your room.</li><li>Check your room on arrival and <strong>report any existing damage</strong> or missing items.</li><li>Ask about key-card access and the arrangements for using shared facilities.</li></ul></section>
+<section class="card"><h2 id="video-heading"><span class="heading-icon" aria-hidden="true">▶</span>What to pack for your stay</h2><p>This video from How to Adult shares general packing tips. Check your SkyNest accommodation package to see what is already included and what you may need to bring.</p><a href="https://www.youtube.com/watch?v=dyDWXM1tFRQ" target="_blank" rel="noopener" style="display:block;background:var(--pine);color:white;text-align:center;text-decoration:none;border-radius:9px;overflow:hidden"><img src="https://i.ytimg.com/vi/dyDWXM1tFRQ/hqdefault.jpg" alt="" style="display:block;width:100%" onerror="this.hidden=true"><span style="display:block;padding:12px">Watch on YouTube (opens in a new tab)</span></a></section>
+<section class="card"><h2 id="shared-spaces-heading"><span class="heading-icon" aria-hidden="true">♡</span>Using shared spaces</h2><ul><li>Keep co-working spaces and study pods <strong>tidy after use</strong>.</li><li><strong>Clean up</strong> after preparing food in the communal kitchens and dining areas.</li><li><strong>Respect other residents</strong> when using the social lounge and shared areas.</li><li>Keep corridors, doorways and shared walkways clear.</li><li>Follow the arrangements provided for key-card access and building security.</li></ul></section>
+<section class="card"><h2 id="maintenance-heading"><span class="heading-icon" aria-hidden="true">⚙</span>Reporting a maintenance issue</h2><ol><li>Note your <strong>room number</strong> or the exact location of the problem.</li><li>Describe the issue and when you first noticed it.</li><li><strong>Report it to SkyNest</strong> using the contact details provided by the company.</li></ol></section>
+<section class="card" id="faqs" style="grid-column:1/-1;border-top:5px solid var(--clay)"><h2><span class="heading-icon" aria-hidden="true">?</span>Frequently Asked Questions (FAQs)</h2><p>Find quick answers to common questions about staying at SkyNest and choosing an accommodation package.</p>
+<style>
+.faq-item{border-top:1px solid var(--line);padding:14px 0}
+.faq-item summary{font-weight:bold;color:var(--pine);cursor:pointer}
+.faq-item p{margin:10px 0 0}
+.faq-item summary::marker{color:var(--clay)}
+</style>
+<details class="faq-item"><summary>What accommodation packages does SkyNest offer?</summary><p>SkyNest offers Premium Stay, Standard Stay, Short-Term Stay and Custom Packages. Each option provides a different room arrangement and level of access to facilities.</p></details>
+<details class="faq-item"><summary>What is the difference between Premium Stay and Standard Stay?</summary><p>Premium Stay provides a private studio apartment with weekly cleaning and access to all facilities. Standard Stay provides a private bedroom in a shared apartment, with fortnightly cleaning and access to shared spaces such as the co-working areas, kitchen and lounge.</p></details>
+<details class="faq-item"><summary>Can I book a short-term stay?</summary><p>Yes. The Short-Term Stay package offers flexible accommodation for 1–4 weeks, subject to availability.</p></details>
+<details class="faq-item"><summary>Are utilities and internet included?</summary><p>Utilities are included in the accommodation packages. High-speed internet is included in the Premium Stay package and is available throughout the building.</p></details>
+<details class="faq-item"><summary>What facilities can residents use?</summary><p>Facilities include co-working and study spaces, shared kitchens and dining areas, laundry rooms, a social lounge, rooftop garden, gym and yoga studio. Access may depend on the package selected.</p></details>
+<details class="faq-item"><summary>Can I request a package for specific requirements?</summary><p>Yes. Custom arrangements may be discussed for corporate bookings, long-term stays and residents with accessibility needs. Contact SkyNest to discuss your requirements.</p></details>
+<details class="faq-item"><summary>How can I make an enquiry about accommodation?</summary><p>Visit the Contact Us page and complete the enquiry form with your preferred package, expected dates and any specific requirements. The form on this practice website is a demonstration and does not send information to a server.</p></details>
+</section>
+</div>
+
+</main>
+<div class="container back-top-wrap"><a class="back-top" href="#top" aria-label="Back to top"><span aria-hidden="true">↑</span> Back to top</a></div>
+<footer><div class="container"><p><strong>SkyNest Co-Living Spaces</strong> | Singapore</p><p class="footer-note">Student practice website. Fictional accommodation provider.</p></div></footer>
+
+<script>
+const pageSearchItems = [
+ {url:"index.html",title:"Home",terms:["home","welcome","homepage","everyday living","arrive and settle in","make time to focus","connect with others","stay that suits your plans","premium stay","standard stay","short-term stay","custom packages","planning your next move"]},
+ {url:"about.html",title:"About Us",terms:["about","about us","about skynest","our story","who we are","our purpose","life at skynest","who our accommodation is for","young professionals","digital nomads","international students","accommodation packages","find your arrangement"]},
+ {url:"facilities.html",title:"Facilities",terms:["facilities","shared spaces","social lounge","co-working","coworking","study spaces","study pods","rooms","everyday facilities","kitchen","dining","laundry","rooftop garden","gym","yoga studio","security","key-card access"]},
+ {url:"guide.html",title:"Resident Guide",terms:["resident guide","guide","accommodation package","choosing your accommodation package","move-in checklist","what to pack","packing","shared spaces","maintenance","maintenance issue","faqs","frequently asked questions","booking","utilities","internet","enquiry"]},
+ {url:"contact.html",title:"Contact Us",terms:["contact","contact us","make an enquiry","send your enquiry","enquiry form","email","message","requirements"]}
+];
+document.getElementById("site-search").addEventListener("submit",function(event){
+ event.preventDefault();
+ const input=document.getElementById("search-input");
+ const status=document.getElementById("search-status");
+ const query=input.value.trim().toLowerCase();
+ if(!query){status.textContent="Please enter a page name or keyword to search.";input.focus();return;}
+ const match=pageSearchItems.find(page=>page.title.toLowerCase()===query || page.terms.some(term=>term.includes(query)||query.includes(term)));
+ if(match){window.location.href=match.url;}
+ else{status.textContent="No matching page was found. Try a keyword such as ‘facilities’, ‘packages’ or ‘resident guide’.";}
+});
+</script>
+
+</body>
+</html>
